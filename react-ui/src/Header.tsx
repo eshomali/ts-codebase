@@ -1,25 +1,26 @@
 import React from 'react';
-import {Button, Radio, FormLabel, FormControl, FormControlLabel, RadioGroup} from '@material-ui/core';
+import {Button, AppBar, Toolbar, IconButton, Typography} from '@material-ui/core';
 
 
 interface Props {
-  value: 1
+  
 }
 
-export const Header: React.FC = (Props) => {
+export const Header: React.FC = () => {
   return (
    
     <div>
-        <Button className="btn1" color="primary">Hello Universe</Button>
-        <FormControl component="fieldset">
-  <FormLabel component="legend">Gender</FormLabel>
-  <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-    <FormControlLabel value="female" control={<Radio />} label="Female" />
-    <FormControlLabel value="male" control={<Radio />} label="Male" />
-    <FormControlLabel value="other" control={<Radio />} label="Other" />
-    <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
-  </RadioGroup>
-</FormControl>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">
+            <div className="fullName">Essa Shomali</div>
+            <div className="indTitle">Software Engineer</div>
+          </Typography>
+        </Toolbar>
+        <Toolbar>
+          <IconButton edge="start" color="inherit" aria-label="menu"><div className="resume">Resume</div></IconButton>
+        </Toolbar>
+      </AppBar>
     </div>
   );
 };
