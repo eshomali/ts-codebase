@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 
 import {Header} from "./Header";
-import {TextField} from "./TextField";
+import {Body} from "./Body";
+import {Container} from '@material-ui/core';
+//import {TextField} from "./TextField";
 
 interface Props {
 
@@ -11,8 +13,10 @@ interface Props {
 const App: React.FC = () => {
   return (
     <div>
-      <Header />
-      <TextField text="hello"/>
+      <Container maxWidth="lg">
+        <Header />
+        <Body />
+      </Container>
     </div>
   );
 };
