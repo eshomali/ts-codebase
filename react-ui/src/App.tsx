@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import {Header} from "./Header";
-import {Body} from "./Body";
+import {Header} from "./structure/Header";
+import {Body} from "./structure/Body";
 import {Container} from '@material-ui/core';
 //import {TextField} from "./TextField";
 
