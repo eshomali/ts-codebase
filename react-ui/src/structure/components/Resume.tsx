@@ -34,10 +34,12 @@ export const Resume: React.FC = () => {
           Comerica Bank
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          &nbsp;Software Engineer
+          &nbsp;Engineer III
         </Typography>
         <Typography variant="body2" component="p">
-          Job Description
+          Full Stack JavaScript
+          CI/CD
+          AWS
         </Typography>
       </CardContent>
     </Card>

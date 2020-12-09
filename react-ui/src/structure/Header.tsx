@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
         <Toolbar>
           <Typography variant="h6">
             <div className="fullName">Essa Shomali</div>
-            <div className="indTitle">Software Engineer</div>
+            <div className="indTitle">Full Stack Developer & DevOps Engineer</div>
           </Typography>
         </Toolbar>
         <Toolbar>
